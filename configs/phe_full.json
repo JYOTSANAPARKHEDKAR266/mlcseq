@@ -1,0 +1,28 @@
+{
+  "_comment": "Reproduces examples/trna_phe_analysis.ipynb. Every manual decision from the notebook is listed here as data. 'ids' are row numbers of the input file (0-based, as pandas reads them).",
+  "control": "samples/Phe/tRNA_Phe_Control.xlsx",
+  "degraded": "samples/Phe/tRNA_Phe_Deg_1.xlsx",
+  "zone_5p": "examples/data/phe5p.xlsx",
+  "zone_3p": "examples/data/phe3p.xlsx",
+  "top_intact": 10,
+  "top_n": 1000,
+  "isoforms": [24252.311092, 24581.380920, 24268.303777, 24597.353308, 23947.269792],
+  "masssum_exclude": {
+    "1": {"5p": {"ids": [3597, 3593, 567]},
+          "3p": {"ids": [431, 566, 2129]}},
+    "2": {"5p": {"ids": [374, 810, 2009, 2057, 3525, 3566, 3592]},
+          "3p": {"ids": [719, 1047, 1301, 2054, 2057, 2129, 2140]}},
+    "3": {"5p": {"ids": [3160, 3525, 3613]},
+          "3p": {"ids": [4, 742, 1245]}},
+    "4": {"5p": {"ids": [3562, 3593, 3597], "mass_below": 6269.79},
+          "3p": {"ids": [587, 687, 1080], "mass_above": 18345.59}}
+  },
+  "gapfill_isoforms": [1, 2],
+  "gapfill_exclude": {
+    "1": {"5p": {"ids": [62, 63, 916, 1463, 2725]},
+          "3p": {"ids": [76, 80, 1571, 1787, 1844, 2138]}},
+    "2": {"5p": {"ids": [62, 63, 695, 696, 1303, 1312, 1320, 1485, 1572, 3641]},
+          "3p": {"ids": []}}
+  },
+  "ladder_isoforms": [1, 2]
+}

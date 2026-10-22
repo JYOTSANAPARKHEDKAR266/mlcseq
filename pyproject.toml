@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlcseq"
+version = "0.1.0"
+description = "Clean, tested re-implementation of the MLC-Seq mass-spec RNA sequencing algorithms"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.5",
+    "openpyxl>=3.0",
+]
+
+[project.optional-dependencies]
+plot = ["plotly>=5", "ipywidgets>=8"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+mlcseq = "mlcseq.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: end-to-end regression tests against the original outputs"]

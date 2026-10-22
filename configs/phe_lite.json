@@ -1,0 +1,9 @@
+{
+  "_comment": "Reproduces examples/trna_phe_analysis_lite.ipynb. Paths are relative to the original MLC-Seq repo folder.",
+  "control": "samples/Phe/tRNA_Phe_Control.xlsx",
+  "degraded": "samples/Phe/tRNA_Phe_Deg_1.xlsx",
+  "zone_5p": "examples/data/phe5p.xlsx",
+  "zone_3p": "examples/data/phe3p.xlsx",
+  "top_intact": 10,
+  "top_n": 1000
+}
