@@ -1,4 +1,5 @@
 # mlcseq
+[![tests](https://github.com/JYOTSANAPARKHEDKAR266/mlcseq/actions/workflows/tests.yml/badge.svg)](https://github.com/JYOTSANAPARKHEDKAR266/mlcseq/actions/workflows/tests.yml)
 
 A cleaned-up, tested Python package of the **MLC-Seq** algorithms from
 *Yuan et al., "Mass Spectrometry-Based Direct Sequencing of tRNAs De Novo and
